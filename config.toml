@@ -1,0 +1,43 @@
+# The URL the site will be built for
+base_url = "https://rvf6.com"
+
+title = "Rvfg"
+description = ""
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "DeepThought"
+generate_feed = true
+taxonomies = [{name = "tags", feed = true}]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "OneHalfLight", filename = "syntax-theme-OneHalfLight.css" },
+  { theme = "OneHalfDark", filename = "syntax-theme-OneHalfDark.css" },
+]
+external_links_no_referrer = true
+
+[extra]
+# Put all your custom variables here
+navbar_items = [
+ { code = "en", nav_items = [
+  { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/posts", name = "Posts" },
+  { url = "$BASE_URL/tags", name = "Tags" },
+  #{ url = "$BASE_URL/categories", name = "Categories" },
+ ]},
+]
+
+[extra.author]
+name = "Rvfg"
+#avatar = "/images/avatar.png"
+
+[extra.social]
+email = "i@rvf6.com"
+github = "duament"

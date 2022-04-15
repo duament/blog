@@ -1,0 +1,36 @@
+{% extends "DeepThought/templates/base.html" %}
+
+{% block user_custom_stylesheet %}
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+{% endblock %}
+
+{% block footbar %}
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Posts licensed under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+          <span class="icon-text">
+            <span class="icon" style="width: 3.5em;">
+              {{ svg::creative_commons() }}
+              {{ svg::creative_commons_by() }}
+              {{ svg::creative_commons_sa() }}
+            </span>
+            <span>CC-BY-SA-4.0</span>
+          </span>
+        </a>
+      </p>
+      <p>
+        <span class="icon-text">
+          <span>Powered by</span>
+          <span class="icon">
+            {{ svg::power_off() }}
+          </span>
+        </span>
+        <a href="https://www.getzola.org/">zola</a>
+        and
+        <a href="https://www.getzola.org/themes/deepthought/">DeepThought</a>
+      </p>
+    </div>
+  </footer>
+{% endblock %}
