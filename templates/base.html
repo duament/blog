@@ -1,7 +1,11 @@
 {% extends "DeepThought/templates/base.html" %}
 
 {% block user_custom_stylesheet %}
-  <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='syntax-theme-OneHalfLight.css') }}" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="{{ get_url(path='syntax-theme-OneHalfDark.css') }}" media="(prefers-color-scheme: dark)">
+  <style>
+    body {font-variant-east-asian:simplified}
+  </style>
 {% endblock %}
 
 {% block footbar %}
