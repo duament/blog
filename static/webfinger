@@ -1,0 +1,9 @@
+{
+  "subject": "acct:i@rvf6.com",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://id.rvf6.com/realms/rvfg"
+    }
+  ]
+}
